@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0; 
+    box-sizing: border-box;
+    /* removes the by default margin and padding in our document 
+    Different browsers apply default margins/padding. This makes sure your layout is consistent.*/
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+
+  /* It includes padding and borders in the total width/height of an element — easier layout control. */
+}
+
+body{
+    background-color: #EDC79B;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem; /*  equals 16px if base is 16px */
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+    /* do this to the body, i mean the properties can be anything but you should set
+    set it to Establishes a clean, readable base for your UI. */
+    /* use rem insted of pixel . It adapts better to user font preferences and makes your layout more responsive. */
+}
+
+.container{
+    height: 70vh;/*vh = viewport height unit . sets the element's height to 70% of the browser's height.
+    To make sections or elements responsive to screen height.*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 1.5vmin;
+}
+
+.outer-div{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*By default, Flexbox puts all items in a single line, even if they overflow:
+     When you use flex-wrap: wrap;, items will wrap onto multiple lines if there isn't enough space:*/
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0 ,0 ,0 ,0.2);
+    font-size: 8vmin;
+    color: #713E5A;
+    background-color: #fff;
+}
+
+.reset-button{
+    padding: 8px 16px;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #CA6680;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    color: #fff ;
+    
+}
+
+.new-button{
+    padding: 8px 16px;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #CA6680;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+    color: #fff ; 
+}
+
+.message-container{
+    height: 15vmin;
+}
+
+#message{
+    font-size: 5vmin;
+    color: #333;
+}
+
+.hide{
+    display: none;
+}
+
+
