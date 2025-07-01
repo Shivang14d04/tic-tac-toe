@@ -1,6 +1,7 @@
 # 🎮 Tic Tac Toe
 
 A simple and interactive Tic Tac Toe game built using **HTML**, **CSS**, and **JavaScript**.
+![screenshot](Screenshot/Screenshot%20from%202025-07-02%2001-00-19.png)
 
 
 
